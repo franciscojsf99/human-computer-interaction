@@ -1,0 +1,111 @@
+\documentclass[a4paper]{article}
+
+\usepackage[version=3]{mhchem}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[left=2cm,right=2cm,top=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{caption}
+\setlength\parindent{0pt}
+
+\renewcommand{\labelenumi}{\alph{enumi}.}
+\newcommand{\igo}{\textit{iGo}}
+
+\title{Avaliação segundo as Heurísticas de Nielsen\\\small Interfaces Pessoa Máquina}
+\author{\textsc{Grupo 19 A}\\Baltasar Dinis 89416, Afonso Ribeiro 86752, Francisco Figueiredo 89443}
+
+\date{\today}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  Este documento expõe 10 problemas encontrados com a interface \igo\  do grupo
+  18, explorando-os segundo a heurística de Nielsen.
+\end{abstract}
+
+\begin{multicols}{2}
+\section*{Relatório AV 1}
+\textbf{Problema:} Modo de seleção das aplicações\\
+\textbf{Heurística:} H2-7: Flexibilidade e eficiência\\
+\textbf{Descrição:} Para selecionar as aplicações, são mostradas 3 ícones e duas setas, que permitem navegar entre as opções. No entanto, esta abordagem não escala com o número de aplicações (se houverem 30, são 28 cliques que se podem ter de fazer).\\
+\textbf{Severidade:} 4\\
+\textbf{Solução Proposta:} Aumentar o número de ícones disponíveis por ecrã ou
+  eliminar este modo em particular, favorecendo o \textit{swipe}.
+
+\section*{Relatório AV2}
+\textbf{Problema:} Modo de seleção alternativo não é intuitivo\\
+\textbf{Heurística:} H2-5: Evitar Erros; H2-7: Flexibilidade e eficiência\\
+\textbf{Descrição:} Há um modo de selecionar aplicações alternativo: fazer
+  \textit{swipe}. No entanto, face à existência de setas, não é óbvio que este modo exista. Para além disso, pode ser complicado parar a roda de aplicações no sítio certo.\\
+\textbf{Severidade:} 3\\
+\textbf{Solução Proposta:} Eliminar o modo com as setas, tornando este o único
+  modo possível; Dar pequenas mensagens/indicações de que é possível fazer
+  \textit{swipe}.
+
+\section*{Relatório AV3}
+\textbf{Problema:} Botões para trás de formatos diferente\\
+\textbf{Heurística:} H2-4: Consistência e adesão a normas\\
+\textbf{Descrição:} Há pelo menos dois formatos de botão para trás, o que pode levar a confusão da parte dos utilizadores\\
+\textbf{Severidade:} 1\\
+\textbf{Solução Proposta:} Adotar um dos formatos.
+
+\section*{Relatório AV4}
+\textbf{Problema:} Ambiguidade na presença de pop-ups\\
+\textbf{Heurística:} H2-1: Tornar o estado do sistema visível; H2-5: Evitar Erros\\
+\textbf{Descrição:} Na presença de um pop-up, há dois botões possíveis: tirar o pop-up e voltar atrás. No entanto, não é claro o que é que o botão para voltar atrás faz: eliminar o pop-up ou ir para outro ecrã - o que pode induzir a erros. Adicionalmente, se o estado do sistema é com pop-up então talvez não devesse ter o botão para trás, o que resolveria a ambiguidade.\\
+\textbf{Severidade:} 2\\
+\textbf{Solução Proposta:} Retirar o botão para trás quando o pop-up está
+  presente (obrigando o utilizador a sair do pop-up) ou o botão de eliminar
+  (substituindo-o pelo tocar fora do pop-up).
+
+\section*{Relatório AV5}
+\textbf{Problema:} Para sair da aplicação, usa-se a impressão digital em vez de um botão para trás.\\
+\textbf{Heurística:} H2-4: Consistência e adesão a normas\\
+\textbf{Descrição:} Em duas aplicações, não há um botão para trás para sair da aplicação, sendo necessário carregar no botão de impressão digital para sair da mesma\\
+\textbf{Severidade:} 2\\
+\textbf{Solução Proposta:} Adotar uma das alternativas consistentemente.
+
+\section*{Relatório AV6}
+\textbf{Problema:} Na aplicação Percursos não é mostrado o mapa com a localização atual\\
+\textbf{Heurística:} H2-2: Correspondência entre o sistema e o mundo real; H2-5: Evitar erros\\
+\textbf{Descrição:} Não é possível verificar imediatamente nem obviamente onde é
+  que o utilizador se encontra, o que pode causar erros na marcação de percursos.\\
+\textbf{Severidade:} 2\\
+\textbf{Solução Proposta:} Adicionar um pequeno mapa que permita ao utilizador
+  localizar-se no mapa.
+
+\section*{Relatório AV7}
+\textbf{Problema:} Na aplicação Música há muitos botões\\
+\textbf{Heurística:} H2-8: Desenho estético e minimalista\\
+\textbf{Descrição:} Na aplicação de Música, há diversos botões (música atual, parar, para a frente, para trás, artistas, álbuns, aleatório, playlists). Sobrecarregam o ecrã.\\
+\textbf{Severidade:} 3\\
+  \textbf{Solução Proposta:} Reduzir o número de opções no menu de música (pelo
+  menos por default, poderiam ser delegadas para um sub-menu, por exemplo).
+
+\section*{Relatório AV8}
+\textbf{Problema:} A aplicação Música tem um esquema diferente das outras\\
+\textbf{Heurística:} H2-4: Consistência e adesão a normas\\
+\textbf{Descrição:} O esquema da aplicação Música é diferente das outras, que têm os botões todos em linha. A organização ser diferente quebra o estilo geral da interface.\\
+\textbf{Severidade:} 2\\
+\textbf{Solução Proposta:} Adotar um esquema consistente no dispositivo todo.
+
+\section*{Relatório AV9}
+\textbf{Problema:} O pop-up do ponto de interesse não pode ser removido.\\
+\textbf{Heurística:} H2-3: Utilizador controla e exerce o livre arbítrio;\\
+\textbf{Descrição:} Não existe nenhuma forma de retirar o pop-up relativos aos pontos de interesse. Isto impede que um utilizador o ignore.\\
+\textbf{Severidade:} 3\\
+\textbf{Solução Proposta:} Adicionar um botão para remover.
+
+\section*{Relatório AV10}
+\textbf{Problema:} O pop-up do ponto de interesse persiste depois de ser clicado\\
+\textbf{Heurística:} H2-2: Correspondência entre o sistema e o mundo real; H2-3: Utilizador controla e exerce o livre arbítrio;\\
+\textbf{Descrição:} Após interação com o pop-up, o mesmo persiste, não existindo uma maneira de o retirar.\\
+\textbf{Severidade:} 3\\
+\textbf{Solução Proposta:} Remover o pop-up por default assim que acaba a
+utilização.
+\end{multicols}
+\end{document}

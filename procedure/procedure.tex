@@ -1,0 +1,192 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[left=2cm,right=2cm,top=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{caption}
+\setlength\parindent{0pt}
+
+\renewcommand{\labelenumi}{\alph{enumi}.}
+\newcommand{\igo}{\textit{iGo}}
+\newcommand{\comment}[1]{}
+
+\title{\igo\\Guião para Testes com Utilizadores\\\small Interfaces Pessoa Máquina}
+\author{Baltasar Dinis 89416, Afonso Ribeiro 86752, Francisco Figueiredo 89443}
+
+\date{\today}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  Este guião visa orientar os testes de utilizador do \igo,
+  implementado pelo grupo 19. Será necessário um computador para
+  a realização do teste. O local deverá ser calmo, para que o
+  utilizador consiga ouvir com clareza quem está a administrar o
+  teste. Procura-se que as condições sejam semelhantes entre os
+  vários testes.
+
+  Anexos encontram-se os questionários demográfico e de
+  usabilidade.
+\end{abstract}
+
+%\begin{multicols}{2}
+  \section{Introdução}
+
+  Bem vindo ao \igo!
+
+  Nesta aplicação para smartwatch --- desenvolvida no âmbito da
+  unidade curricular de Interfaces Pessoa Máquina --- os
+  utilizadores têm no seu pulso o necessário para tornarem as suas
+  férias espectaculares!
+
+  Com este teste procuramos avaliar a usabilidade da aplicação,
+  de forma a obter dados que permitam o seu melhoramento em
+  iterações futuras.
+
+  Será pedido que sejam cumpridas três tarefas, e serão
+  contabilizados três parâmetros:
+  \begin{enumerate}
+    \item
+      Tempo necessário;
+    \item
+      Número de cliques;
+    \item
+      Número de erros.
+  \end{enumerate}
+
+  Para o teste ser iniciado, o utilizador deve preencher o
+  questionário com os seus dados e o formulário de consentimento.
+  No final, será preenchido ainda um questionário de satisfação.
+
+  Poderão ser dadas sugestões ou opiniões, mas não podem ser
+  colocadas questões. O questionado não poderá interagir com o
+  observador e está livre de abandonar o teste em qualquer
+  altura.
+
+  Salienta-se que os testes têm como objetivo avaliar a
+  \textbf{interface} e não o utilizador e que os dados
+  recolhidos são anónimos e têm como único objetivo melhorar o
+  sistema.
+
+  Agradecemos desde já a colaboração.
+
+  \section{Avaliação}
+
+  \subsection{Visitar um ponto de interesse}
+  \textbf{Tarefa}: Encontrar e seguir o caminho para o Museu
+  Calouste Gulbenkian.
+
+  \textbf{Eficácia}\\
+  \textit{Critério de Mensurabilidade}: Número de cliques e
+  número de erros;
+
+  \textit{Execução Esperada}: É expectável que o utilizador
+  realize esta tarefa com no máximo 0 erros e 8 cliques.
+  Sendo que 60\% realizá com 0 erros e 6 cliques.
+
+  \textbf{Efeciência}\\
+  \textit{Critério de Mensurabilidade}: Tempo necessário para
+  realizar a tarefa;
+
+  \textit{Execução Esperada}: O tempo médio para completar esta
+  tarefa será inferior a 30 segundos. Todos os utilizadores levarão
+  menos de 1 minuto a realizar a tarefa.
+
+  \textbf{Satisfação}\\
+  \textit{Medida}: Escala de Likert (5 niveis)
+  1: Foi fácil encontrar o mapa;
+  2: Foi fácil encontrar o Museu Calouste Gulbenkian;
+  3: O mapa foi intuitivo, e seria útil caso procurasse o museu;
+
+  \textit{Esperada}: 90\% dos utilizadores deverá optar por selecionar
+  4 ou superior em todas as escalas.
+
+  \subsection{Tirar uma Foto com um Dispositivo Externo}
+  \textbf{Tarefa}: Tirar uma foto num dispositivo externo,
+  colocando um temporizador de 5 segundos e aumentando o brilho.
+
+  \textbf{Eficácia}\\
+  \textit{Critério de Mensurabilidade}: Número de cliques e
+  número de erros;
+
+  \textit{Execução Esperada}: É expectável que o utilizador
+  realize esta tarefa com no máximo 1 erros e 12 cliques.
+  Sendo que 75\% realizá com 0 erros e 9 cliques.
+
+  \textbf{Efeciência}\\
+  \textit{Critério de Mensurabilidade}: Tempo necessário para
+  realizar a tarefa;
+
+  \textit{Execução Esperada}: O tempo médio para completar esta
+  tarefa será inferior a 45 segundos. Todos os utilizadores levarão
+  menos de 1 minuto e 20 segundos a realizar a tarefa.
+
+  \textbf{Satisfação}\\
+  \textit{Medida}: Escala de Likert (5 niveis)
+  1: Foi fácil sincronizar com o dispositivo externo;
+  2: Foi fácil ajustar o temporizador;
+  3: Foi fácil ajustar o brilho;
+  4: Foi fácil tirar a fotografia
+
+  \textit{Esperada}: 95\% dos utilizadores deverá optar por selecionar 4 ou superior em todas as escalas. Sendo que
+  65\% destes opte por selecionar 5;
+
+  \subsection{Partilhar uma Fotografia}
+  \textbf{Tarefa}: Partilhar duas fotos à
+  escolha no myWeb, adicionando a localização e uma descrição,
+  também à escolha.
+
+  \textbf{Eficácia}\\
+  \textit{Critério de Mensurabilidade}: Número de cliques e
+  número de erros;
+
+  \textit{Execução Esperada}: É expectável que o utilizador
+  realize esta tarefa com no máximo 1 erros e 12 cliques.
+  Espera-se que 20\% leve menos de 20 cliques pois não
+  percebeu que podia partilhar 2 fotografias ao memsmo tempo.
+
+  \textbf{Efeciência}\\
+  \textit{Critério de Mensurabilidade}: Tempo necessário para
+  realizar a tarefa;
+
+  \textit{Execução Esperada}: O tempo médio para completar esta
+  tarefa será inferior a 50 segundos. Todos os utilizadores levarão
+  menos de 1 minuto e meio a realizar a tarefa.
+
+  \textbf{Satisfação}\\
+  \textit{Medida}: Escala de Likert (5 niveis)
+  1: Foi fácil navegar até à galeria;
+  2: Foi fácil selecionar as fotografias;
+  3: Foi fácil adicionar a localização;
+  4: Foi fácil partilhar a foto no myWeb
+
+  \textit{Esperada}: 90\% dos utilizadores deverá optar por selecionar
+  4 ou superior em todas as escalas excepto na segunda.
+  Onde se espera que 85\% selecion 3 ou superior.
+
+%\end{multicols}
+
+  \section{Balanço}
+
+  No final do teste, os utilizadores deverão responder a
+  perguntas sobre a sua satisfação sobre as funcionalidades e a
+  realização das tarefas.
+
+  \section{Caracterização dos utilizadores}
+
+  
+
+  \section{Análise estatística}
+
+
+
+  \section{Conclusão}
+
+  
+
+
+\end{document}

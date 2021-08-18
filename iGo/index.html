@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>iGo-19A</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/elements.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/images.js"></script>
+    <script src="js/description.js"></script>
+    <script src="js/screen/screen.js"></script>
+    <script src="js/notification/notification.js"></script>
+    <script src="js/screen/lockscreen.js"></script>
+    <script src="js/screen/homescreen.js"></script>
+    <script src="js/screen/galleryscreen.js"></script>
+    <script src="js/screen/multipleselectionscreen.js"></script>
+    <script src="js/screen/imgscreen.js"></script>
+    <script src="js/screen/sharescreen.js"></script>
+    <script src="js/screen/addshareinfoscreen.js"></script>
+    <script src="js/screen/descriptionscreen.js"></script>
+    <script src="js/screen/deleteimgscreen.js"></script>
+    <script src="js/screen/nfcscreen.js"></script>
+    <script src="js/screen/actioncompletedscreen.js"></script>
+    <script src="js/screen/synccamerascreen.js"></script>
+    <script src="js/screen/camerascreen.js"></script>
+    <script src="js/screen/imgdefinitionscreen.js"></script>
+    <script src="js/screen/mapscreen.js"></script>
+    <script src="js/screen/pointsofinterestscreen.js"></script>
+    <script src="js/screen/statsmuseumscreen.js"></script>
+    <script src="js/screen/statsrestaurantscreen.js"></script>
+    <script src="js/screen/statshotelscreen.js"></script>
+    <script src="js/icon/icon.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="watch" align="center">
+    <svg id="base" width="400" height="408.0">
+      <rect onclick="goBackButton()" id="backButton" x="353.25" y="150" rx="5" ry="5" width="20" height="50" />
+      <rect onclick="goHomeButton()" id="homeButton" x="353.25" y="279" rx="5" ry="5" width="20" height="80" />
+      <rect id="screen_pic" x="47.5" y="100" rx="26.4" ry="26.4" width="304.5" height="304.5" />
+    </svg>
+    <div id="screen_frame">
+    </div>
+    <div id="notification">
+    </div>
+  </div>
+  <div id="helper" style="margin-top: -350px"></div><div>
+  <div id="helper2"></div><div>
+</body>
+
+<script>init();update();</script>
+</html>
